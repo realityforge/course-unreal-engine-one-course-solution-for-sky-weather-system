@@ -14,3 +14,6 @@ rem See the License for the specific language governing permissions and
 rem limitations under the License.
 
 braid push Plugins/RuleRanger && git add . && git stash && braid up Plugins/RuleRanger && git stash pop && git reset
+
+rmdir /S /Q Plugins\RuleRanger\Binaries
+rmdir /S /Q Plugins\RuleRanger\Intermediate
